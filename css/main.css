@@ -404,3 +404,63 @@ body {
 #fries-container, #sauces-container, #drinks-container {
     display: none;
 }
+
+#info {
+    background: url("../images/info-bg.png");
+    background-position: top center;
+    padding: 1px 0;
+}
+
+#info .block-title {
+    margin: 130px 0 60px 0;
+}
+
+#reviews {
+    display: flex;
+    justify-content: space-around;
+    width: 1170px;
+    margin: 0 auto;
+}
+
+#reviews .review {
+    display: flex;
+    align-items: flex-start;
+    width: 470px;
+    justify-content: space-between;
+}
+#reviews .review .review-image {
+    border-radius: 50%;
+    width: 112px;
+    height: 112px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+#reviews .review .review-text {
+    width: 325px;
+}
+
+#reviews .review .review-text .review-text-title {
+    font-size: 20px;
+    font-family: "RobotoBold", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+#reviews .review .review-text .review-text-description {
+    font-size: 16px;
+    font-family: "RobotoLight", sans-serif;
+    color: rgb(254, 254, 254);
+    line-height: 25px;
+}
+
+#addresses {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+#addresses .block-title {
+margin: 150px 0 60px 0;
+}
+
+#addresses .block-title
