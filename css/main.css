@@ -23,6 +23,16 @@
     src: url("../fonts/RobotoLight.ttf");
 }
 
+@font-face {
+    font-family: 'RobotoBlack';
+    src: url("../fonts/RobotoBlack.ttf");
+}
+
+@font-face {
+    font-family: 'RobotoThin';
+    src: url("../fonts/RobotoThin.ttf");
+}
+
 
 body {
     margin: 0;
@@ -390,14 +400,15 @@ body {
     display: inline;
 }
 
-.slick-prev:before {
+#stock .slick-prev:before {
     content: url("../images/prev.png");
 }
-.slick-next:before {
+
+#stock .slick-next:before {
     content: url("../images/next.png");
 }
 
-.slick-next {
+#stock .slick-next {
     left: 600px;
 }
 
@@ -425,9 +436,11 @@ body {
 #reviews .review {
     display: flex;
     align-items: flex-start;
-    width: 470px;
+    margin: 0 50px;
     justify-content: space-between;
+    outline: 0;
 }
+
 #reviews .review .review-image {
     border-radius: 50%;
     width: 112px;
@@ -436,6 +449,7 @@ body {
     background-size: cover;
     background-position: center;
 }
+
 #reviews .review .review-text {
     width: 325px;
 }
@@ -460,7 +474,90 @@ body {
 }
 
 #addresses .block-title {
-margin: 150px 0 60px 0;
+    margin: 150px 0 60px 0;
 }
 
-#addresses .block-title
+#addresses-container {
+    display: flex;
+    justify-content: center;
+}
+
+#addresses-container .address-container {
+    border-width: 1px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 0 15px;
+}
+
+#addresses-container .address-container .address {
+    border-width: 1px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-radius: 10px;
+    width: 470px;
+}
+
+#addresses-container .address-container .address .address-text {
+    margin-top: 25px;
+    text-align: left;
+    padding: 0 90px;
+}
+
+#addresses-container .address-container .address .address-text span {
+    font-size: 20px;
+    font-family: "RobotoBold", sans-serif;
+    color: rgb(247, 246, 246);
+    margin-left: 15px;
+    vertical-align: middle;
+}
+
+#addresses-container .address-container .address .address-text img {
+    vertical-align: middle;
+}
+
+#addresses-container .address-container .address .address-button {
+    margin: 40px auto 25px auto;
+    text-align: center;
+}
+
+#instagram {
+    margin: 85px auto;
+    width: 1170px;
+    text-align: center;
+}
+
+#instagram a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#instagram #instagram-text {
+    font-size: 20px;
+    font-family: "RobotoBlack", sans-serif;
+    color: rgb(246, 165, 1);
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 35px;
+}
+
+#footer {
+    background-color: rgb(18, 8, 1);
+    width: 100%;
+    height: 60px;
+    font-size: 10px;
+    font-family: "RobotoThin", sans-serif;
+    color: rgb(188, 188, 188);
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 60px;
+}
+
+#reviews .slick-prev:before {
+    content: url("../images/prev-gray.png");
+}
+
+#reviews .slick-next:before {
+    content: url("../images/next-gray.png");
+}
