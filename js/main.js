@@ -10,8 +10,8 @@ $(document).ready(() => {
         $('.category').removeClass('active');
         currentElement.addClass('active');
 
-        $('#' + id + '.products').slick('refresh');
-        $('#' + id + '.products-nav').slick('refresh');
+        $('#' + id + ' .products').slick('refresh');
+        $('#' + id + ' .products-nav').slick('refresh');
     });
 
     $('#burgers-container .products').slick({
