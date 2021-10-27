@@ -85,7 +85,18 @@ $(document).ready(() => {
     $('#reviews').slick({
         infinite: true,
         slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToScroll: 2,
+        responsive: [
+            {
+                breakpoint: 579,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                }
+            },
+    ]
     });
 
     $('.open-modal').click(() => {
@@ -124,4 +135,11 @@ $(document).ready(() => {
         }
     });
 
+    $('#burger').click(() => {
+       $('#header').toggleClass('menu-open');
+    });
+
+    $('#header #menu ul li').click(() => {
+        $('#header').removeClass('menu-open');
+    })
 })
