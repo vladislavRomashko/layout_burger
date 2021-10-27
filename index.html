@@ -19,30 +19,30 @@
         <div id="menu">
             <ul>
                 <li class="active">
-                    <a href="#">Главная</a>
+                    <a href="#main">Главная</a>
                 </li>
                 <li>
-                    <a href="#">О нас</a>
+                    <a href="#description">О нас</a>
                 </li>
                 <li>
-                    <a href="#">Преимущества</a>
+                    <a href="#features">Преимущества</a>
                 </li>
                 <li>
-                    <a href="#">Наши бургеры</a>
+                    <a href="#stock">Наши бургеры</a>
                 </li>
                 <li>
-                    <a href="#">Адреса ресторанов</a>
+                    <a href="#addresses">Адреса ресторанов</a>
                 </li>
             </ul>
         </div>
         <div id="action">
-            <button class="btn-white">ЗАБРОНИРОВАТЬ СТОЛИК</button>
+            <button class="btn-white open-modal">ЗАБРОНИРОВАТЬ СТОЛИК</button>
         </div>
     </div>
     <div id="titles">
         <div id="title-burgers">СВЕЖИЕ БУПГЕРЫ</div>
         <div id="show-menu">
-            <button class="btn-yellow">Посмотреть меню</button>
+            <a href="#stock" class="btn-yellow">Посмотреть меню</a>
         </div>
         <div id="title-text">
             <span>Такие сочные,</span> что пальчики оближешь
@@ -707,7 +707,7 @@
                         <span>Ежедневно 9:00 — 23:00</span>
                     </div>
                     <div class="address-button">
-                        <button class="btn-white">ЗАБРОНИРОВАТЬ СТОЛИК</button>
+                        <button class="btn-white open-modal">ЗАБРОНИРОВАТЬ СТОЛИК</button>
                     </div>
                 </div>
             </div>
@@ -726,7 +726,7 @@
                         <span>Ежедневно 9:00 — 23:00</span>
                     </div>
                     <div class="address-button">
-                        <button class="btn-white">ЗАБРОНИРОВАТЬ СТОЛИК</button>
+                        <button class="btn-white open-modal">ЗАБРОНИРОВАТЬ СТОЛИК</button>
                     </div>
                 </div>
             </div>
@@ -746,6 +746,59 @@
 
 <div id="footer">
     burgerclub 2019&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;все права защищены
+</div>
+
+<div id="reservation-container">
+    <div id="reservation">
+        <div id="reservation-cancel">
+            <img id="reservation-cancel-close" src="images/cancel-2.png" alt="">
+        </div>
+        <div id="reservation-content">
+            <h2 class="block-title">забронировать столик</h2>
+            <form action="" id="reserve" method="post">
+                <div class="reserve-input">
+                    <label for="name">Ваше имя</label>
+                    <div>
+                        <input type="text" name="name" id="name">
+                    </div>
+                </div>
+                <div class="reserve-input">
+                    <label for="count">Количество человек</label>
+                    <div>
+                        <input type="text" name="count" id="count">
+                    </div>
+                </div>
+                <div class="reserve-input">
+                    <label for="phone">Ваш телефон</label>
+                    <div>
+                        <input type="text" name="phone" id="phone">
+                    </div>
+                </div>
+                <div class="reserve-input">
+                    <label for="time">Желаемое время</label>
+                    <div>
+                        <input type="text" name="time" id="time">
+                    </div>
+                </div>
+                <p id="reserve-error">
+                    Заполните правильно все поля
+                </p>
+            </form>
+
+            <div id="reserve-button">
+                <button class="btn-yellow">Забронировать</button>
+            </div>
+        </div>
+        <div id="reservation-sent">
+            <h2 class="block-title">
+                спасибо за то, что выбрали нас!
+            </h2>
+            <div id="reservation-sent-text">
+                Администратор BURGERCLUB свяжется с вами в течение 15 минут,
+                чтобы подтвердить бронирование
+            </div>
+        </div>
+    </div>
 </div>
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/slick.min.js"></script>
